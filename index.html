@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumit's Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="wrapper">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo-container">
-                    <img src="./Gallery/Slogo.jpg" alt="Slogo" class="logo">
-                    <div class="logo-text">umit Tiwari</div>
-                </div>
-                <div class="nav-items">
-                    <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#contactMe">Contact Me</a></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="./Gallery/Slogo.jpg" alt="Slogo" class="logo" />
+            <div class="logo-text">umit Tiwari</div>
+          </div>
+          <div class="nav-items">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contactMe">Contact Me</a></div>
+          </div>
         </div>
+
+        <div class="hero-section">
+          <div class="absolute faded-text">Sumit Tiwari</div>
+          <div class="hero-section-left">
+            <div class="hero-section-heading">Hi!! Sumit Tiwari</div>
+            <div class="hero-section-heading hero-section-sub-heading">
+              I am a <span class="role"></span>
+            </div>
+            <div class="hero-section-description">
+              I'm a software developer and here is my portfolio website. Here
+              you'll learn about my journey as a softwre developer.
+            </div>
+            <div class="btn-pink" id="btn">Hire me</div>
+          </div>
+          <div class="hero-section-right">
+            <div class="absolute icons icon-dots">
+              <img src="./Gallery/dots.png" alt="dots" />
+            </div>
+            <div class="absolute icons icon-cube">
+              <img src="./Gallery/cube.png" alt="cube" />
+            </div>
+            <div class="absolute icons icon-circle">
+              <img src="./Gallery/circle.png" alt="circle" />
+            </div>
+            <div class="absolute icons icon-zigzag">
+              <img src="./Gallery/zigzags.png" alt="zigzag" />
+            </div>
+            <div class="absolute icons icon-plus">
+              <img src="./Gallery/plus.png" alt="plus" />
+            </div>
+            <div class="user-image">
+              <img src="./Gallery//user-image.jpeg" alt="user-image" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Developer",
+          "Web Developer",
+          "UI-UX Designer",
+          "Backend Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
 </html>
